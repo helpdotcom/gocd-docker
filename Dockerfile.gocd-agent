@@ -16,4 +16,4 @@ RUN sed -i 's/DAEMON=Y/DAEMON=N/' /etc/default/go-agent
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-CMD ["/sbin/my_init"]
+CMD ["/usr/share/go-agent/agent.sh"]
